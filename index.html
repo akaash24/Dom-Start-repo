@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM start Now</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      li {
+        color: yellowgreen;
+      }
+
+      .places {
+        color: teal;
+      }
+      .bhason-container li {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welocme to DOM</h1>
+      <p>joy bangla joy bangla banglar joy....</p>
+    </header>
+    <main id="main-content">
+      <section>
+        <h1>DOM DE BABA</h1>
+        <ul>
+          <li>Jalali</li>
+          <li>Safayt</li>
+          <li>MOtu</li>
+        </ul>
+      </section>
+      <section class="bhason-container">
+        <h1 id="bhason-title">Bhashon</h1>
+        <ul>
+          <li>joy bangla</li>
+          <li>bangladesh</li>
+          <li>neta moder</li>
+        </ul>
+      </section>
+      <section id="places-container">
+        <h1 id="places-title">I like to visit</h1>
+        <ul id="places-list">
+          <li class="places">Dhaka</li>
+          <li class="places">Naogan</li>
+          <li class="places">Khilgaon</li>
+          <li>Bikrampur</li>
+        </ul>
+      </section>
+    </main>
+    <script src="./js/append.js"></script>
+    <script src="./js/styleinjs.js"></script>
+    <script src="./js/dom.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName("li");
+      for (const li of liCollection) {
+        // console.log(li.innerText);
+      }
+
+      const allHeading = document.getElementsByTagName("h1");
+      for (const h1 of allHeading) {
+        // console.log(h1.innerText);
+      }
+      const student = {
+        name: "Abul",
+        ID: 11,
+        study: function (time) {
+          //   console.log(time, "Lekhapora suru");
+        },
+      };
+      //   console.log("Adding JS inside HTML file");
+      const visitePlaces = document.getElementsByClassName("places");
+      for (const places of visitePlaces) {
+        // console.log(places.innerText);
+      }
+      const someLi = document.querySelectorAll(".bhason-container");
+      //   console.log(someLi);
+      for (const li of someLi) {
+        // console.log(li.innerText);
+      }
+    </script>
+  </body>
+</html>
